@@ -42,7 +42,7 @@ cat > "$STAGE/DEBIAN/control" <<EOF
 Package: $PKG
 Version: $VERSION
 Architecture: all
-Maintainer: Shinji Escorido <shinji@exitonyourterms.com>
+Maintainer: Shinji Escorido <shinji.escorido@gmail.com>
 Depends: python3 (>= 3.10), python3-pyqt6, python3-pynput, python3-xlib, libxcb-cursor0
 Section: utils
 Priority: optional
