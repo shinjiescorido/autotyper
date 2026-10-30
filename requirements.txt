@@ -1,0 +1,6 @@
+# Install with: pip install --no-deps -r requirements.txt
+# (--no-deps skips evdev, which needs a C compiler and is not used on X11)
+pynput>=1.7
+python-xlib>=0.17
+six
+PySide6>=6.6  # GUI (autotyper_gui.py); install separately with deps: pip install PySide6

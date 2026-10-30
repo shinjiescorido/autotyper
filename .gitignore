@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments (Linux and Windows builds)
+.venv/
+.venv-win/
+
+# Build output
+build/
+dist/
+*.spec
+
+# Locally unpacked libxcb-cursor fallback
+.libs/
+
+# Local tooling notes
+CLAUDE.md
