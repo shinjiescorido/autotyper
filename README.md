@@ -6,6 +6,27 @@ An auto typer and mouse mover for testing activity tracking. It types randomly g
 - After each round it clears the editor (Ctrl+A, Backspace) and starts again.
 - **DEL** starts and pauses typing from anywhere, as long as the typer has been started.
 
+## Requirements
+
+### Linux (Ubuntu 24.04+ / Debian)
+
+You need an X11 session; pynput can't send keystrokes or mouse moves under Wayland. At the login screen, choose "Ubuntu on Xorg".
+
+| To | Install |
+| --- | --- |
+| Run the `.deb` | Nothing extra. `sudo apt install ./autotyper_1.0.0_all.deb` pulls in everything. |
+| Run from source with system packages | `sudo apt install python3 python3-pyqt6 python3-pynput python3-xlib libxcb-cursor0` |
+| Run from source in a venv | `sudo apt install python3 python3-venv libxcb-cursor0`, then follow [Development setup](#development-setup-linux) |
+| Build the `.deb` | `dpkg-deb`, which comes with every Ubuntu/Debian system |
+
+### Windows (10/11, 64-bit)
+
+| To | Install |
+| --- | --- |
+| Run `AutoTyperSetup.exe` or `AutoTyper.exe` | Nothing. Python and Qt are bundled. |
+| Run from source | [Python 3](https://www.python.org/downloads/) (tick "Add python.exe to PATH"), then `pip install pynput PySide6` |
+| Build the exe and installer | Python 3, plus [Inno Setup 6.3+](https://jrsoftware.org/isdl.php) (`winget install JRSoftware.InnoSetup`) for the installer. `build_windows.bat` installs pynput, PySide6 and PyInstaller into `.venv-win` itself. |
+
 ## Usage
 
 ### GUI
